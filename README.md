@@ -1,7 +1,7 @@
 # Android-Data-Binding-Tutorial
 Android Basic Data Binding Tutorial
 
-#### Add this code to Grade file: build.gradle(Module:app)
+### Add this code to Grade file: build.gradle(Module:app)
 ```
  dataBinding {
         enabled = true
@@ -9,7 +9,7 @@ Android Basic Data Binding Tutorial
 
 ```
 
-## Example 
+#### Example 
 ```
 
 android {
@@ -36,9 +36,9 @@ android {
 ```
 
 
-#### wrap Layout with layout tags 
+### wrap Layout with layout tags 
 
-## Example 
+#### Example 
 
 ```
 
@@ -70,4 +70,32 @@ android {
 
 </layout>
 
+```
+
+
+## Useablity
+
+```
+
+public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        //Generate Binding with layout to Java file
+        binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
+
+
+        //change value in textview
+        binding.name.setText("Vishal Gupta");
+            
+
+    }
+}
+
+ 
+ 
 ```
