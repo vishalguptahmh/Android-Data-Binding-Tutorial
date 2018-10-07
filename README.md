@@ -2,7 +2,8 @@
 Android Basic Data Binding Tutorial
 
 ### Add this code to Grade file: build.gradle(Module:app)
-```
+```java
+
  dataBinding {
         enabled = true
     }
@@ -10,7 +11,7 @@ Android Basic Data Binding Tutorial
 ```
 
 #### Example 
-```
+```java
 
 android {
     compileSdkVersion 26
@@ -40,7 +41,8 @@ android {
 
 #### Example 
 
-```
+```java
+
 
 <?xml version="1.0" encoding="utf-8"?>
 <layout
@@ -75,7 +77,8 @@ android {
 
 ## Useablity
 
-```
+```java
+
 
 public class MainActivity extends AppCompatActivity {
 
